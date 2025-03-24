@@ -1,0 +1,8 @@
+{
+  "BlackBytesBox.Routed.Middleware": "BlackBytesBox.Routed.Middleware.yml",
+  "BlackBytesBox.Routed.Middleware.IOsVersionService": "BlackBytesBox.Routed.Middleware.IOsVersionService.yml",
+  "BlackBytesBox.Routed.Middleware.IOsVersionService.ShowOsVersion(System.Threading.CancellationToken)": "BlackBytesBox.Routed.Middleware.IOsVersionService.yml",
+  "BlackBytesBox.Routed.Middleware.OsVersionService": "BlackBytesBox.Routed.Middleware.OsVersionService.yml",
+  "BlackBytesBox.Routed.Middleware.OsVersionService.#ctor(Microsoft.Extensions.Logging.ILogger{BlackBytesBox.Routed.Middleware.OsVersionService})": "BlackBytesBox.Routed.Middleware.OsVersionService.yml",
+  "BlackBytesBox.Routed.Middleware.OsVersionService.ShowOsVersion(System.Threading.CancellationToken)": "BlackBytesBox.Routed.Middleware.OsVersionService.yml"
+}

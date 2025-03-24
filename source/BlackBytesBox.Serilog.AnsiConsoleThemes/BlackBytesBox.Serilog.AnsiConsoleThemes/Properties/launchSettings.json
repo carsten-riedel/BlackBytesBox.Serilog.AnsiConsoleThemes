@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BlackBytesBox.Serilog.AnsiConsoleThemes": {
+      "commandName": "Project",
+      "commandLineArgs": ""
+    }
+  }
+}

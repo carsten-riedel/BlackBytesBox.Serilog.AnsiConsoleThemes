@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlackBytesBox.Routed.Middleware
+  commentId: N:BlackBytesBox.Routed.Middleware
+  id: BlackBytesBox.Routed.Middleware
+  children:
+  - BlackBytesBox.Routed.Middleware.IOsVersionService
+  - BlackBytesBox.Routed.Middleware.OsVersionService
+  langs:
+  - csharp
+  - vb
+  name: BlackBytesBox.Routed.Middleware
+  nameWithType: BlackBytesBox.Routed.Middleware
+  fullName: BlackBytesBox.Routed.Middleware
+  type: Namespace
+  assemblies:
+  - BlackBytesBox.Routed.Middleware
+references:
+- uid: BlackBytesBox.Routed.Middleware.IOsVersionService
+  commentId: T:BlackBytesBox.Routed.Middleware.IOsVersionService
+  parent: BlackBytesBox.Routed.Middleware
+  href: BlackBytesBox.Routed.Middleware.IOsVersionService.html
+  name: IOsVersionService
+  nameWithType: IOsVersionService
+  fullName: BlackBytesBox.Routed.Middleware.IOsVersionService
+- uid: BlackBytesBox.Routed.Middleware.OsVersionService
+  commentId: T:BlackBytesBox.Routed.Middleware.OsVersionService
+  href: BlackBytesBox.Routed.Middleware.OsVersionService.html
+  name: OsVersionService
+  nameWithType: OsVersionService
+  fullName: BlackBytesBox.Routed.Middleware.OsVersionService
+- uid: BlackBytesBox.Routed.Middleware
+  commentId: N:BlackBytesBox.Routed.Middleware
+  href: BlackBytesBox.html
+  name: BlackBytesBox.Routed.Middleware
+  nameWithType: BlackBytesBox.Routed.Middleware
+  fullName: BlackBytesBox.Routed.Middleware
+  spec.csharp:
+  - uid: BlackBytesBox
+    name: BlackBytesBox
+    href: BlackBytesBox.html
+  - name: .
+  - uid: BlackBytesBox.Routed
+    name: Routed
+    href: BlackBytesBox.Routed.html
+  - name: .
+  - uid: BlackBytesBox.Routed.Middleware
+    name: Middleware
+    href: BlackBytesBox.Routed.Middleware.html
+  spec.vb:
+  - uid: BlackBytesBox
+    name: BlackBytesBox
+    href: BlackBytesBox.html
+  - name: .
+  - uid: BlackBytesBox.Routed
+    name: Routed
+    href: BlackBytesBox.Routed.html
+  - name: .
+  - uid: BlackBytesBox.Routed.Middleware
+    name: Middleware
+    href: BlackBytesBox.Routed.Middleware.html

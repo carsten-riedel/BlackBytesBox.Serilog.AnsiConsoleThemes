@@ -1,0 +1,91 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>false</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<EnableMSTestRunner>true</EnableMSTestRunner>
+		<SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+
+		<VersionBuild>0</VersionBuild>
+		<VersionMajor>1</VersionMajor>
+		<VersionMinor>0</VersionMinor>
+		<VersionRevision>0</VersionRevision>
+		<AssemblyVersion>$(VersionBuild).$(VersionMajor).$(VersionMinor).$(VersionRevision)</AssemblyVersion>
+		<Version>$(VersionBuild).$(VersionMajor).$(VersionMinor).$(VersionRevision)$(VersionSuffix)</Version>
+
+		<OutputReportDir Condition="'$(OutputReportDirectory)' != ''">$(OutputReportDirectory)</OutputReportDir>
+		<OutputReportDir Condition="'$(OutputReportDirectory)' == ''">$(MSBuildThisFileDirectory)bin\Output\TestResults\$(AssemblyName)\</OutputReportDir>
+
+		<ResultsDirectory>$(OutputReportDir)</ResultsDirectory>
+		<CollectCoverage>true</CollectCoverage>
+		<CoverletOutputFormat>opencover,json</CoverletOutputFormat>
+		<CoverletOutput>$(MSBuildThisFileDirectory)bin/CoverletOutput</CoverletOutput>
+		<Include>[*]BlackBytesBox.Serilog.AnsiConsoleThemes.Services.*</Include>
+		<VSTestLogger>trx%3bLogFileName=$(OutputReportDir)\ReportTestResult.trx;html%3bLogFileName=$(OutputReportDir)\ReportTestResult.html</VSTestLogger>
+		
+		<!--
+      Displays error on console in addition to the log file. Note that this feature comes with a performance impact.
+      For more information, visit https://learn.microsoft.com/dotnet/core/testing/unit-testing-platform-integration-dotnet-test#show-failure-per-test
+      -->
+
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<IsPackable>false</IsPackable>
+		<IsPublishable>false</IsPublishable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="appsettings.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="appsettings.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.3" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+		<PackageReference Include="MSTest.TestAdapter" Version="3.8.0" />
+		<PackageReference Include="MSTest.TestFramework" Version="3.8.0" />
+		<PackageReference Include="coverlet.msbuild" Version="6.0.4">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="ReportGenerator" Version="5.4.4" />
+		<PackageReference Include="Serilog" Version="4.2.0" />
+		<PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />
+		<PackageReference Include="System.Text.Json" Version="9.0.2" />
+	</ItemGroup>
+
+	<!--<Target Name="ShowSpecificReference" AfterTargets="VSTest">
+		<ItemGroup>
+			--><!-- Filter references whose filename starts with 'MyLibrary' --><!--
+			<MyLibraryReferences Include="@(ReferencePath)" Condition="$([System.String]::Copy(%(Filename)).StartsWith('STROM'))" />
+		</ItemGroup>
+		--><!-- Output the filtered references --><!--
+		<Message Importance="High" Text="========> Specific Referenced Library: @(MyLibraryReferences->'%(Filename)', ', ')" />
+	</Target>-->
+
+
+	<Target Name="GenerateHtmlCoverageReport" AfterTargets="GenerateCoverageResultAfterTest">
+		<ReportGenerator ReportFiles="@(CoverletReport)" TargetDirectory="$(OutputReportDir)" ReportTypes="MarkdownSummaryGithub;CsvSummary" />
+		<Move SourceFiles="$(OutputReportDir)\Summary.csv" DestinationFiles="$(OutputReportDir)\ReportCoverageSummary.csv" />
+		<Move SourceFiles="$(OutputReportDir)\SummaryGithub.md" DestinationFiles="$(OutputReportDir)\ReportCoverageSummary.md" />
+	</Target>
+
+
+	<ItemGroup>
+	  <ProjectReference Include="..\BlackBytesBox.Serilog.AnsiConsoleThemes\BlackBytesBox.Serilog.AnsiConsoleThemes.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+	</ItemGroup>
+
+</Project>

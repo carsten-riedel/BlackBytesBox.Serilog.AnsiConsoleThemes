@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		..\workflows\cicd.ps1 = ..\workflows\cicd.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{05E8020C-8779-408E-B193-45DD8CD4494D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBytesBox.Serilog.AnsiConsoleThemes", "BlackBytesBox.Serilog.AnsiConsoleThemes\BlackBytesBox.Serilog.AnsiConsoleThemes\BlackBytesBox.Serilog.AnsiConsoleThemes.csproj", "{10A721C8-9DA1-B754-A744-6DD89AAA5D3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBytesBox.Serilog.AnsiConsoleThemes.Tests", "BlackBytesBox.Serilog.AnsiConsoleThemes\BlackBytesBox.Serilog.AnsiConsoleThemes.Tests\BlackBytesBox.Serilog.AnsiConsoleThemes.Tests.csproj", "{F760B05E-B7EE-3D05-283C-E92D58B3C631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBytesBox.Serilog.AnsiConsoleThemes.Console", "BlackBytesBox.Serilog.AnsiConsoleThemes\BlackBytesBox.Serilog.AnsiConsoleThemes.Console\BlackBytesBox.Serilog.AnsiConsoleThemes.Console.csproj", "{DE8D7D20-56EF-6FA4-CC89-69418A8257DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10A721C8-9DA1-B754-A744-6DD89AAA5D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A721C8-9DA1-B754-A744-6DD89AAA5D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A721C8-9DA1-B754-A744-6DD89AAA5D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A721C8-9DA1-B754-A744-6DD89AAA5D3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F760B05E-B7EE-3D05-283C-E92D58B3C631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F760B05E-B7EE-3D05-283C-E92D58B3C631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F760B05E-B7EE-3D05-283C-E92D58B3C631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F760B05E-B7EE-3D05-283C-E92D58B3C631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE8D7D20-56EF-6FA4-CC89-69418A8257DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8D7D20-56EF-6FA4-CC89-69418A8257DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8D7D20-56EF-6FA4-CC89-69418A8257DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8D7D20-56EF-6FA4-CC89-69418A8257DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10A721C8-9DA1-B754-A744-6DD89AAA5D3F} = {05E8020C-8779-408E-B193-45DD8CD4494D}
+		{F760B05E-B7EE-3D05-283C-E92D58B3C631} = {05E8020C-8779-408E-B193-45DD8CD4494D}
+		{DE8D7D20-56EF-6FA4-CC89-69418A8257DD} = {05E8020C-8779-408E-B193-45DD8CD4494D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DD3C65F-D95D-43B5-A21A-B13ED33C3420}
+	EndGlobalSection
+EndGlobal

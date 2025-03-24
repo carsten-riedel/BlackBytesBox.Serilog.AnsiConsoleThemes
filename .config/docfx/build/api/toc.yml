@@ -1,0 +1,10 @@
+### YamlMime:TableOfContent
+items:
+- uid: BlackBytesBox.Routed.Middleware
+  name: BlackBytesBox.Routed.Middleware
+  items:
+  - uid: BlackBytesBox.Routed.Middleware.IOsVersionService
+    name: IOsVersionService
+  - uid: BlackBytesBox.Routed.Middleware.OsVersionService
+    name: OsVersionService
+memberLayout: SamePage

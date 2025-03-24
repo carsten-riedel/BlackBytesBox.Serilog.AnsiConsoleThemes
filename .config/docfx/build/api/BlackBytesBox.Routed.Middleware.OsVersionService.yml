@@ -1,0 +1,607 @@
+### YamlMime:ManagedReference
+items:
+- uid: BlackBytesBox.Routed.Middleware.OsVersionService
+  commentId: T:BlackBytesBox.Routed.Middleware.OsVersionService
+  id: OsVersionService
+  parent: BlackBytesBox.Routed.Middleware
+  children:
+  - BlackBytesBox.Routed.Middleware.OsVersionService.#ctor(Microsoft.Extensions.Logging.ILogger{BlackBytesBox.Routed.Middleware.OsVersionService})
+  - BlackBytesBox.Routed.Middleware.OsVersionService.ShowOsVersion(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: OsVersionService
+  nameWithType: OsVersionService
+  fullName: BlackBytesBox.Routed.Middleware.OsVersionService
+  type: Class
+  source:
+    remote:
+      path: source/BlackBytesBox.Routed.Middleware/BlackBytesBox.Routed.Middleware/Services/OsVersionService.cs
+      branch: feature/setup
+      repo: https://github.com/carsten-riedel/BlackBytesBox.Routed.Middleware.git
+    id: OsVersionService
+    path: ../../../source/BlackBytesBox.Routed.Middleware/BlackBytesBox.Routed.Middleware/Services/OsVersionService.cs
+    startLine: 25
+  assemblies:
+  - BlackBytesBox.Routed.Middleware
+  namespace: BlackBytesBox.Routed.Middleware
+  summary: A concrete implementation of IOsVersionService that writes the OS version to the console.
+  example: []
+  syntax:
+    content: 'public class OsVersionService : IOsVersionService'
+    content.vb: Public Class OsVersionService Implements IOsVersionService
+  inheritance:
+  - System.Object
+  implements:
+  - BlackBytesBox.Routed.Middleware.IOsVersionService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BlackBytesBox.Routed.Middleware.OsVersionService.#ctor(Microsoft.Extensions.Logging.ILogger{BlackBytesBox.Routed.Middleware.OsVersionService})
+  commentId: M:BlackBytesBox.Routed.Middleware.OsVersionService.#ctor(Microsoft.Extensions.Logging.ILogger{BlackBytesBox.Routed.Middleware.OsVersionService})
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{BlackBytesBox.Routed.Middleware.OsVersionService})'
+  parent: BlackBytesBox.Routed.Middleware.OsVersionService
+  langs:
+  - csharp
+  - vb
+  name: OsVersionService(ILogger<OsVersionService>)
+  nameWithType: OsVersionService.OsVersionService(ILogger<OsVersionService>)
+  fullName: BlackBytesBox.Routed.Middleware.OsVersionService.OsVersionService(Microsoft.Extensions.Logging.ILogger<BlackBytesBox.Routed.Middleware.OsVersionService>)
+  type: Constructor
+  source:
+    remote:
+      path: source/BlackBytesBox.Routed.Middleware/BlackBytesBox.Routed.Middleware/Services/OsVersionService.cs
+      branch: feature/setup
+      repo: https://github.com/carsten-riedel/BlackBytesBox.Routed.Middleware.git
+    id: .ctor
+    path: ../../../source/BlackBytesBox.Routed.Middleware/BlackBytesBox.Routed.Middleware/Services/OsVersionService.cs
+    startLine: 29
+  assemblies:
+  - BlackBytesBox.Routed.Middleware
+  namespace: BlackBytesBox.Routed.Middleware
+  syntax:
+    content: public OsVersionService(ILogger<OsVersionService> logger)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{BlackBytesBox.Routed.Middleware.OsVersionService}
+    content.vb: Public Sub New(logger As ILogger(Of OsVersionService))
+  overload: BlackBytesBox.Routed.Middleware.OsVersionService.#ctor*
+  nameWithType.vb: OsVersionService.New(ILogger(Of OsVersionService))
+  fullName.vb: BlackBytesBox.Routed.Middleware.OsVersionService.New(Microsoft.Extensions.Logging.ILogger(Of BlackBytesBox.Routed.Middleware.OsVersionService))
+  name.vb: New(ILogger(Of OsVersionService))
+- uid: BlackBytesBox.Routed.Middleware.OsVersionService.ShowOsVersion(System.Threading.CancellationToken)
+  commentId: M:BlackBytesBox.Routed.Middleware.OsVersionService.ShowOsVersion(System.Threading.CancellationToken)
+  id: ShowOsVersion(System.Threading.CancellationToken)
+  parent: BlackBytesBox.Routed.Middleware.OsVersionService
+  langs:
+  - csharp
+  - vb
+  name: ShowOsVersion(CancellationToken)
+  nameWithType: OsVersionService.ShowOsVersion(CancellationToken)
+  fullName: BlackBytesBox.Routed.Middleware.OsVersionService.ShowOsVersion(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: source/BlackBytesBox.Routed.Middleware/BlackBytesBox.Routed.Middleware/Services/OsVersionService.cs
+      branch: feature/setup
+      repo: https://github.com/carsten-riedel/BlackBytesBox.Routed.Middleware.git
+    id: ShowOsVersion
+    path: ../../../source/BlackBytesBox.Routed.Middleware/BlackBytesBox.Routed.Middleware/Services/OsVersionService.cs
+    startLine: 35
+  assemblies:
+  - BlackBytesBox.Routed.Middleware
+  namespace: BlackBytesBox.Routed.Middleware
+  summary: Displays the current operating system version.
+  example: []
+  syntax:
+    content: public Task ShowOsVersion(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ShowOsVersion(cancellationToken As CancellationToken) As Task
+  overload: BlackBytesBox.Routed.Middleware.OsVersionService.ShowOsVersion*
+  implements:
+  - BlackBytesBox.Routed.Middleware.IOsVersionService.ShowOsVersion(System.Threading.CancellationToken)
+references:
+- uid: BlackBytesBox.Routed.Middleware
+  commentId: N:BlackBytesBox.Routed.Middleware
+  href: BlackBytesBox.html
+  name: BlackBytesBox.Routed.Middleware
+  nameWithType: BlackBytesBox.Routed.Middleware
+  fullName: BlackBytesBox.Routed.Middleware
+  spec.csharp:
+  - uid: BlackBytesBox
+    name: BlackBytesBox
+    href: BlackBytesBox.html
+  - name: .
+  - uid: BlackBytesBox.Routed
+    name: Routed
+    href: BlackBytesBox.Routed.html
+  - name: .
+  - uid: BlackBytesBox.Routed.Middleware
+    name: Middleware
+    href: BlackBytesBox.Routed.Middleware.html
+  spec.vb:
+  - uid: BlackBytesBox
+    name: BlackBytesBox
+    href: BlackBytesBox.html
+  - name: .
+  - uid: BlackBytesBox.Routed
+    name: Routed
+    href: BlackBytesBox.Routed.html
+  - name: .
+  - uid: BlackBytesBox.Routed.Middleware
+    name: Middleware
+    href: BlackBytesBox.Routed.Middleware.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BlackBytesBox.Routed.Middleware.IOsVersionService
+  commentId: T:BlackBytesBox.Routed.Middleware.IOsVersionService
+  parent: BlackBytesBox.Routed.Middleware
+  href: BlackBytesBox.Routed.Middleware.IOsVersionService.html
+  name: IOsVersionService
+  nameWithType: IOsVersionService
+  fullName: BlackBytesBox.Routed.Middleware.IOsVersionService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BlackBytesBox.Routed.Middleware.OsVersionService.#ctor*
+  commentId: Overload:BlackBytesBox.Routed.Middleware.OsVersionService.#ctor
+  href: BlackBytesBox.Routed.Middleware.OsVersionService.html#BlackBytesBox_Routed_Middleware_OsVersionService__ctor_Microsoft_Extensions_Logging_ILogger_BlackBytesBox_Routed_Middleware_OsVersionService__
+  name: OsVersionService
+  nameWithType: OsVersionService.OsVersionService
+  fullName: BlackBytesBox.Routed.Middleware.OsVersionService.OsVersionService
+  nameWithType.vb: OsVersionService.New
+  fullName.vb: BlackBytesBox.Routed.Middleware.OsVersionService.New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{BlackBytesBox.Routed.Middleware.OsVersionService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{BlackBytesBox.Routed.Middleware.OsVersionService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<OsVersionService>
+  nameWithType: ILogger<OsVersionService>
+  fullName: Microsoft.Extensions.Logging.ILogger<BlackBytesBox.Routed.Middleware.OsVersionService>
+  nameWithType.vb: ILogger(Of OsVersionService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of BlackBytesBox.Routed.Middleware.OsVersionService)
+  name.vb: ILogger(Of OsVersionService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: BlackBytesBox.Routed.Middleware.OsVersionService
+    name: OsVersionService
+    href: BlackBytesBox.Routed.Middleware.OsVersionService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BlackBytesBox.Routed.Middleware.OsVersionService
+    name: OsVersionService
+    href: BlackBytesBox.Routed.Middleware.OsVersionService.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: BlackBytesBox.Routed.Middleware.OsVersionService.ShowOsVersion*
+  commentId: Overload:BlackBytesBox.Routed.Middleware.OsVersionService.ShowOsVersion
+  href: BlackBytesBox.Routed.Middleware.OsVersionService.html#BlackBytesBox_Routed_Middleware_OsVersionService_ShowOsVersion_System_Threading_CancellationToken_
+  name: ShowOsVersion
+  nameWithType: OsVersionService.ShowOsVersion
+  fullName: BlackBytesBox.Routed.Middleware.OsVersionService.ShowOsVersion
+- uid: BlackBytesBox.Routed.Middleware.IOsVersionService.ShowOsVersion(System.Threading.CancellationToken)
+  commentId: M:BlackBytesBox.Routed.Middleware.IOsVersionService.ShowOsVersion(System.Threading.CancellationToken)
+  parent: BlackBytesBox.Routed.Middleware.IOsVersionService
+  isExternal: true
+  href: BlackBytesBox.Routed.Middleware.IOsVersionService.html#BlackBytesBox_Routed_Middleware_IOsVersionService_ShowOsVersion_System_Threading_CancellationToken_
+  name: ShowOsVersion(CancellationToken)
+  nameWithType: IOsVersionService.ShowOsVersion(CancellationToken)
+  fullName: BlackBytesBox.Routed.Middleware.IOsVersionService.ShowOsVersion(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: BlackBytesBox.Routed.Middleware.IOsVersionService.ShowOsVersion(System.Threading.CancellationToken)
+    name: ShowOsVersion
+    href: BlackBytesBox.Routed.Middleware.IOsVersionService.html#BlackBytesBox_Routed_Middleware_IOsVersionService_ShowOsVersion_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: BlackBytesBox.Routed.Middleware.IOsVersionService.ShowOsVersion(System.Threading.CancellationToken)
+    name: ShowOsVersion
+    href: BlackBytesBox.Routed.Middleware.IOsVersionService.html#BlackBytesBox_Routed_Middleware_IOsVersionService_ShowOsVersion_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

@@ -1,0 +1,42 @@
+{
+  "metadata": [
+    {
+      "noRestore": true,
+      "src": [
+        {
+          "src": "C:/dev/github.com/carsten-riedel/BlackBytesBox.Routed.Middleware/source/BlackBytesBox.Routed.Middleware/BlackBytesBox.Routed.Middleware",
+          "files": [
+            "**/*.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "C:/dev/github.com/carsten-riedel/BlackBytesBox.Routed.Middleware/reports/BlackBytesBox.Routed.Middleware/feature/SETUP/0.1.20251.15433/docfx",
+    "template": [
+      "statictoc",
+      "../_exported_templates/override"
+    ],
+    "globalMetadata": {
+      "_appName": "BlackBytesBox.Routed.Middleware",
+      "_appTitle": "BlackBytesBox.Routed.Middleware",
+      "_appFooter": "<pre></pre>"
+    }
+  }
+}
