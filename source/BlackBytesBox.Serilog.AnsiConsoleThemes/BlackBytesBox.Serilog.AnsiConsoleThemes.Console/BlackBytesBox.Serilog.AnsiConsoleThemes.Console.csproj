@@ -1,15 +1,34 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFrameworks>net9.0</TargetFrameworks>
+		<SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+		<CheckEolTargetFramework>false</CheckEolTargetFramework>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BlackBytesBox.Serilog.AnsiConsoleThemes\BlackBytesBox.Serilog.AnsiConsoleThemes.csproj" />
-  </ItemGroup>
+	<!-- Packaging and publish configuration -->
+	<PropertyGroup>
+		<IsPackable>false</IsPackable>
+		<IsPublishable>true</IsPublishable>
+		<IsTestProject>false</IsTestProject>
+		<PackAsTool>false</PackAsTool>
+	</PropertyGroup>
+
+	<!-- Versioning details -->
+	<PropertyGroup>
+		<VersionBuild>0</VersionBuild>
+		<VersionMajor>1</VersionMajor>
+		<VersionMinor>0</VersionMinor>
+		<VersionRevision>0</VersionRevision>
+		<AssemblyVersion>$(VersionBuild).$(VersionMajor).$(VersionMinor).$(VersionRevision)</AssemblyVersion>
+		<Version>$(VersionBuild).$(VersionMajor).$(VersionMinor).$(VersionRevision)$(VersionSuffix)</Version>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\BlackBytesBox.Serilog.AnsiConsoleThemes\BlackBytesBox.Serilog.AnsiConsoleThemes.csproj" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.3" />
