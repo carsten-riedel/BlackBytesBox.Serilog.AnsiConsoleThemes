@@ -34,7 +34,7 @@ namespace BlackBytesBox.Serilog.AnsiConsoleThemes.Tests
 
             // Build and start the host.
             host = hostBuilder.Build();
-            await host.RunAsync();
+            await host.StartAsync();
         }
 
         [ClassCleanup]
