@@ -35,6 +35,14 @@ var logger = new LoggerConfiguration()
     .CreateLogger();
 ```
 
+## ClarionDusk
+
+![image](https://github.com/user-attachments/assets/6e192f1b-c83b-45a4-a285-672a16c6b0a4)
+
+## ProfessionalNoir
+
+![image](https://github.com/user-attachments/assets/9aad98e9-be3c-4f41-86b2-f22574c4ffde)
+
 ## License
 
 This project is licensed under the terms specified in the repository.
