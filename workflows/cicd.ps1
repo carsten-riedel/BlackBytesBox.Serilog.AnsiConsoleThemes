@@ -86,25 +86,17 @@ Ensure-Variable -Variable { $NUGET_TEST_PAT } -ExitIfNullOrEmpty -HideValue
 #Required directorys
 $artifactsOutputFolderName = "artifacts"
 $reportsOutputFolderName = "reports"
+$docsOutputFolderName = "docs"
 
 $outputRootArtifactsDirectory = New-DirectoryFromSegments -Paths @($topLevelDirectory, $artifactsOutputFolderName)
 $outputRootReportResultsDirectory = New-DirectoryFromSegments -Paths @($topLevelDirectory, $reportsOutputFolderName)
+$outputRootDocsResultsDirectory = New-DirectoryFromSegments -Paths @($topLevelDirectory, $docsOutputFolderName)
 $targetConfigAllowedLicenses = Join-Segments -Segments @($topLevelDirectory, ".config", "allowed-licenses.json")
 $targetConfigLicensesMappings = Join-Segments -Segments @($topLevelDirectory, ".config", "licenses-mapping.json")
 
 
 if (-not $isCiCd) { Delete-FilesByPattern -Path "$outputRootArtifactsDirectory" -Pattern "*"  }
 if (-not $isCiCd) { Delete-FilesByPattern -Path "$outputRootReportResultsDirectory" -Pattern "*"  }
-
-# Get current Git user settings once before the loop
-$gitUserLocal = git config user.name
-$gitMailLocal = git config user.email
-
-$gitTempUser = "Workflow"
-$gitTempMail = "carstenriedel@outlook.com"  # Assuming a placeholder email
-
-git config user.name $gitTempUser
-git config user.email $gitTempMail
 
 # Initialize the array to accumulate projects.
 $solutionFiles = Find-FilesByPattern -Path "$topLevelDirectory\source" -Pattern "*.sln"
@@ -115,6 +107,16 @@ foreach ($solutionFile in $solutionFiles) {
 }
 $solutionProjectsObj = $solutionProjects | ForEach-Object { Get-Item $_ }
 
+
+# Get current Git user settings once before the loop
+$gitUserLocal = git config user.name
+$gitMailLocal = git config user.email
+
+$gitTempUser = "Workflow"
+$gitTempMail = "carstenriedel@outlook.com"  # Assuming a placeholder email
+
+git config user.name $gitTempUser
+git config user.email $gitTempMail
 
 foreach ($projectFile in $solutionProjectsObj) {
 
@@ -130,7 +132,8 @@ foreach ($projectFile in $solutionProjectsObj) {
 
     $commonProjectParameters = @(
         "--verbosity","minimal",
-		"-p:""Deterministic=true",
+        "-p:""Deterministic=true",
+		"-p:""ContinuousIntegrationBuild=true",
         "-p:""VersionBuild=$($calculatedVersion.VersionBuild)""",
         "-p:""VersionMajor=$($calculatedVersion.VersionMajor)""",
         "-p:""VersionMinor=$($calculatedVersion.VersionMinor)""",
@@ -243,6 +246,14 @@ foreach ($projectFile in $solutionProjectsObj) {
             else {
                 Write-Host "===> Warning: No NuGet package (*.nupkg) found in '$outputArtifactPackDirectory' for deployment." -ForegroundColor Yellow
             }
+
+            Write-Output "$outputReportDirectory"
+            Write-Output "$outputRootDocsResultsDirectory/$channelRoot"
+            Copy-FilesRecursively -SourceDirectory "$outputReportDirectory" -DestinationDirectory "$outputRootDocsResultsDirectory/$channelRoot" -Filter "*" -CopyEmptyDirs $false -ForceOverwrite $true -CleanDestination $true
+
+            git add $outputRootDocsResultsDirectory/$channelRoot/
+            git commit -m "Updated from Workflow [no ci]"
+            git push origin $currentBranch
         }
     } elseif ($channelRoot.ToLower() -in @("quality")) {
         if ($isLocal)
@@ -266,6 +277,12 @@ foreach ($projectFile in $solutionProjectsObj) {
             else {
                 Write-Host "===> Warning: No NuGet package (*.nupkg) found in '$outputArtifactPackDirectory' for deployment." -ForegroundColor Yellow
             }
+
+            Copy-FilesRecursively -SourceDirectory "$outputReportDirectory" -DestinationDirectory "$outputRootDocsResultsDirectory/$channelRoot" -Filter "*" -CopyEmptyDirs $false -ForceOverwrite $true -CleanDestination $true
+
+            git add $outputRootDocsResultsDirectory/$channelRoot/
+            git commit -m "Updated from Workflow [no ci]"
+            git push origin $currentBranch
         }
     } elseif ($channelRoot.ToLower() -in @("staging")) {
         if ($isLocal)
@@ -289,6 +306,12 @@ foreach ($projectFile in $solutionProjectsObj) {
             else {
                 Write-Host "===> Warning: No NuGet package (*.nupkg) found in '$outputArtifactPackDirectory' for deployment." -ForegroundColor Yellow
             }
+
+            Copy-FilesRecursively -SourceDirectory "$outputReportDirectory" -DestinationDirectory "$outputRootDocsResultsDirectory/$channelRoot" -Filter "*" -CopyEmptyDirs $false -ForceOverwrite $true -CleanDestination $true
+
+            git add $outputRootDocsResultsDirectory/$channelRoot/
+            git commit -m "Updated from Workflow [no ci]"
+            git push origin $currentBranch
         }
     } elseif ($channelRoot.ToLower() -in @("production")) {
         if ($isLocal)
@@ -313,6 +336,12 @@ foreach ($projectFile in $solutionProjectsObj) {
             else {
                 Write-Host "===> Warning: No NuGet package (*.nupkg) found in '$outputArtifactPackDirectory' for deployment." -ForegroundColor Yellow
             }
+
+            Copy-FilesRecursively -SourceDirectory "$outputReportDirectory" -DestinationDirectory "$outputRootDocsResultsDirectory/$channelRoot" -Filter "*" -CopyEmptyDirs $false -ForceOverwrite $true -CleanDestination $true
+
+            git add $outputRootDocsResultsDirectory/$channelRoot/
+            git commit -m "Updated from Workflow [no ci]"
+            git push origin $currentBranch
         }
     } else {
         <# Action when all if and elseif conditions are false #>
@@ -320,3 +349,5 @@ foreach ($projectFile in $solutionProjectsObj) {
 
 }
 
+git config user.name $gitUserLocal
+git config user.email $gitMailLocal
