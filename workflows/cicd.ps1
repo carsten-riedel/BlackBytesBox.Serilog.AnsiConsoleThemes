@@ -86,9 +86,11 @@ Ensure-Variable -Variable { $NUGET_TEST_PAT } -ExitIfNullOrEmpty -HideValue
 #Required directorys
 $artifactsOutputFolderName = "artifacts"
 $reportsOutputFolderName = "reports"
+$docsOutputFolderName = "docs"
 
 $outputRootArtifactsDirectory = New-DirectoryFromSegments -Paths @($topLevelDirectory, $artifactsOutputFolderName)
 $outputRootReportResultsDirectory = New-DirectoryFromSegments -Paths @($topLevelDirectory, $reportsOutputFolderName)
+$outputRootDocsResultsDirectory = New-DirectoryFromSegments -Paths @($topLevelDirectory, $docsOutputFolderName)
 $targetConfigAllowedLicenses = Join-Segments -Segments @($topLevelDirectory, ".config", "allowed-licenses.json")
 $targetConfigLicensesMappings = Join-Segments -Segments @($topLevelDirectory, ".config", "licenses-mapping.json")
 
