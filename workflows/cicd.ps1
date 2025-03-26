@@ -247,6 +247,8 @@ foreach ($projectFile in $solutionProjectsObj) {
                 Write-Host "===> Warning: No NuGet package (*.nupkg) found in '$outputArtifactPackDirectory' for deployment." -ForegroundColor Yellow
             }
 
+            Write-Output "$outputReportDirectory"
+            Write-Output "$outputRootDocsResultsDirectory/$channelRoot"
             Copy-FilesRecursively -SourceDirectory "$outputReportDirectory" -DestinationDirectory "$outputRootDocsResultsDirectory/$channelRoot" -Filter "*" -CopyEmptyDirs $false -ForceOverwrite $true -CleanDestination $true
 
             git add $outputRootDocsResultsDirectory/$channelRoot/
