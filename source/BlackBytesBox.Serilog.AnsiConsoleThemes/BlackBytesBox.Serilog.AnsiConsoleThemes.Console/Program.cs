@@ -19,7 +19,7 @@ namespace BlackBytesBox.Serilog.AnsiConsoleThemes.Console
                 .MinimumLevel.Verbose()
                 .WriteTo.Console(
                 restrictedToMinimumLevel: LogEventLevel.Verbose,
-                theme: AnsiConsoleThemes.CustomThemes.ProfessionalNoir
+                theme: AnsiConsoleThemes.CustomThemes.CodingNight
                 ).CreateLogger();
 
             IHostBuilder hostBuilder = Host.CreateDefaultBuilder();
