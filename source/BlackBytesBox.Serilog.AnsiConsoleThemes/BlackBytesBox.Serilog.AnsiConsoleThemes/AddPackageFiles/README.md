@@ -13,7 +13,7 @@ A collection of custom ANSI console themes for styled logging output with Serilo
 ## Features
 
 - **Enhanced Readability:** Carefully curated color schemes to clearly differentiate log levels and message types.
-- **Ease of Integration:** Plug-and-play integration with Serilog’s ANSI console sink.
+- **Ease of Integration:** Plug-and-play integration with Serilogâ€™s ANSI console sink.
 - **Customization:** Extend or modify themes to suit your application's specific visual needs.
 
 ## Installation
@@ -34,6 +34,18 @@ var logger = new LoggerConfiguration()
     .WriteTo.Console(theme: CustomThemes.ClarionDusk)
     .CreateLogger();
 ```
+
+## ClarionDusk
+
+![image](https://github.com/user-attachments/assets/6e192f1b-c83b-45a4-a285-672a16c6b0a4)
+
+## ProfessionalNoir
+
+![image](https://github.com/user-attachments/assets/9aad98e9-be3c-4f41-86b2-f22574c4ffde)
+
+## CodeingNight
+
+![image](https://github.com/user-attachments/assets/d01f48df-998c-4b4b-b99a-da4a2d09e802)
 
 ## License
 
