@@ -1,0 +1,131 @@
+{
+  "source_base_path": "/home/runner/work/BlackBytesBox.Serilog.AnsiConsoleThemes/BlackBytesBox.Serilog.AnsiConsoleThemes/.config/docfx/build",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlackBytesBox.Routed.Middleware.IOsVersionService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlackBytesBox.Routed.Middleware.IOsVersionService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlackBytesBox.Routed.Middleware.OsVersionService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlackBytesBox.Routed.Middleware.OsVersionService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlackBytesBox.Routed.Middleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlackBytesBox.Routed.Middleware.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BlackBytesBox.Serilog.AnsiConsoleThemes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BlackBytesBox.Serilog.AnsiConsoleThemes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/blackbytes_small.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/blackbytes_small.gif"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
