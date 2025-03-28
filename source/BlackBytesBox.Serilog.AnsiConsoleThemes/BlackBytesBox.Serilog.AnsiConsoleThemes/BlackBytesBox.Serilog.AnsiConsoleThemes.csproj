@@ -52,7 +52,7 @@
 		<Authors>Carsten Riedel</Authors>
 		<Owners>Carsten Riedel</Owners>
 		<PackageId>$(AssemblyName)</PackageId>
-		<PackageTags>aspnetcore;middleware;security;filtering;blacklist;whitelist;request-validation;ip-filtering;url-filtering;dotnet;BlackBytesBox</PackageTags>
+		<PackageTags>BlackBytesBox;CustomTheme;AnsiConsole;Color;Serilog</PackageTags>
 		<PackageProjectUrl>https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
@@ -72,6 +72,7 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+	  <PackageReference Include="System.Text.Json" Version="9.0.3" />
 	</ItemGroup>
 
 </Project>
