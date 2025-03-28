@@ -1,9 +1,29 @@
 [
   {
-    "PackageId": "Serilog.Sinks.Console",
-    "PackageVersion": "6.0.0",
-    "PackageProjectUrl": "https://github.com/serilog/serilog-sinks-console",
+    "PackageId": "Microsoft.Extensions.Hosting",
+    "PackageVersion": "9.0.3",
+    "PackageProjectUrl": "https://dot.net/",
+    "Copyright": "\u00A9 Microsoft Corporation. All rights reserved.",
+    "Authors": "Microsoft",
+    "License": "MIT",
+    "LicenseUrl": "https://licenses.nuget.org/MIT",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Serilog",
+    "PackageVersion": "4.2.0",
+    "PackageProjectUrl": "https://serilog.net/",
+    "Copyright": "Copyright \u00A9 Serilog Contributors",
     "Authors": "Serilog Contributors",
+    "License": "Apache-2.0",
+    "LicenseUrl": "https://licenses.nuget.org/Apache-2.0",
+    "LicenseInformationOrigin": 0
+  },
+  {
+    "PackageId": "Serilog.Extensions.Hosting",
+    "PackageVersion": "9.0.0",
+    "PackageProjectUrl": "https://github.com/serilog/serilog-extensions-hosting",
+    "Authors": "Microsoft,Serilog Contributors",
     "License": "Apache-2.0",
     "LicenseUrl": "https://licenses.nuget.org/Apache-2.0",
     "LicenseInformationOrigin": 0
