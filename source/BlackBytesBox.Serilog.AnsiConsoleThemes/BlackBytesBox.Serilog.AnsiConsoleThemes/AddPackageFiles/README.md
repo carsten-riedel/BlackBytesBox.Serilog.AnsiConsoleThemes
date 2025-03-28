@@ -47,6 +47,23 @@ var logger = new LoggerConfiguration()
 
 ![image](https://github.com/user-attachments/assets/d01f48df-998c-4b4b-b99a-da4a2d09e802)
 
-## License
 
-This project is licensed under the terms specified in the repository.
+
+## Third-Party Notices and Reports
+
+Access key documentation and reports detailing the use and status of third-party components, software dependencies, and audit results:
+
+- **[Third Party Notices](https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/blob/main/docs/production/ReportThirdPartyNotices.txt)**\
+  A complete list of third-party libraries and their licensing terms.
+
+- **[Bill of Materials](https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/blob/main/docs/production/ReportBillOfMaterials.md)**\
+  An itemized overview of all included components, including versions and sources.
+
+- **[Outdated Packages Report](https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/blob/main/docs/production/ReportOutdated.md)**\
+  Lists legacy or outdated dependencies that may require updating.
+
+- **[Deprecated Components Report](https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/blob/main/docs/production/ReportDeprecated.md)**\
+  Identifies components flagged as deprecated and planned for removal.
+
+- **[Vulnerability Report](https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/blob/main/docs/production/ReportVulnerabilities.md)**\
+  Documents known vulnerabilities detected in current dependencies and their impact.

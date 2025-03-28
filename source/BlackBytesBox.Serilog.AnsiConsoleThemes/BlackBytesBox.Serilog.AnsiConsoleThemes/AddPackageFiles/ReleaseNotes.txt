@@ -15,8 +15,8 @@ What's New & Improved?
 - Initial groundwork for future stable releases.
 
 Third-Party Notices
---------------------
-Third-party dependencies and their respective licenses are documented
-in the `THIRD-PARTY-NOTICES.txt` file, located in the root of the
-repository. Please review this file to ensure compliance with any
-relevant licensing terms.
+------------------------
+This project includes third-party dependencies, each governed by its own licensing terms.  
+Details and corresponding license information can be found in the `THIRD PARTY NOTICES` section of the `Readme.md` file, located at the root of the repository.  
+Please review this section to ensure full compliance with all applicable licenses.
+

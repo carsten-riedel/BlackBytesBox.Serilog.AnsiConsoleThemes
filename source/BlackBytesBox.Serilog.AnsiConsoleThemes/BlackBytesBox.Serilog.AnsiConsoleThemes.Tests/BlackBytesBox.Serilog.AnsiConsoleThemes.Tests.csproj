@@ -60,7 +60,7 @@
 		<PackageReference Include="ReportGenerator" Version="5.4.4" />
 		<PackageReference Include="Serilog" Version="4.2.0" />
 		<PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />
-		<PackageReference Include="System.Text.Json" Version="9.0.2" />
+		<PackageReference Include="System.Text.Json" Version="9.0.3" />
 	</ItemGroup>
 
 	<!--<Target Name="ShowSpecificReference" AfterTargets="VSTest">
