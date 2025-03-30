@@ -66,4 +66,5 @@
 *.cs linguist-language=C#
 
 # Mark CI/CD scripts as generated so they don't affect language stats
-.github/** linguist-generated=true
+.github/** linguist-vendored
+
