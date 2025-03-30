@@ -107,6 +107,7 @@ foreach ($solutionFile in $solutionFiles) {
 }
 $solutionProjectsObj = $solutionProjects | ForEach-Object { Get-Item $_ }
 
+
 # Get current Git user settings once before the loop
 $gitUserLocal = git config user.name
 $gitMailLocal = git config user.email
