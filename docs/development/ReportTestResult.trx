@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="d605dfa7-4017-414f-8c3a-ce4c6ec65a75" name="@fv-az1314-105 2025-04-16 17:44:36" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-04-16T17:44:36.0777095+00:00" queuing="2025-04-16T17:44:36.0777096+00:00" start="2025-04-16T17:44:35.2126500+00:00" finish="2025-04-16T17:44:36.0858382+00:00" />
+  <TestSettings name="default" id="6c14d52f-e29c-41e8-ba08-947c0bf59fc4">
+    <Deployment runDeploymentRoot="_fv-az1314-105_2025-04-16_17_44_36" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="fd51701e-9227-4944-aa4c-1c9810b56a84" testId="43f84606-b6c5-64b7-bc6e-37de90b408da" testName="TestMyMiddlewareIntegration (100)" computerName="fv-az1314-105" duration="00:00:00.1053624" startTime="2025-04-16T17:44:35.6805584+00:00" endTime="2025-04-16T17:44:35.9443010+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd51701e-9227-4944-aa4c-1c9810b56a84">
+      <Output>
+        <StdOut>17:44:35.80 INF Ctx: Microsoft.Hosting.Lifetime
+17:44:35.80 INF Msg: Application started. Press Ctrl+C to shut down.
+17:44:35.81 INF Ctx: Microsoft.Hosting.Lifetime
+17:44:35.81 INF Msg: Hosting environment: Production
+17:44:35.82 INF Ctx: Microsoft.Hosting.Lifetime
+17:44:35.82 INF Msg: Content root path: /home/runner/work/BlackBytesBox.Serilog.AnsiConsoleThemes/BlackBytesBox.Serilog.AnsiConsoleThemes/source/BlackBytesBox.Serilog.AnsiConsoleThemes/BlackBytesBox.Serilog.AnsiConsoleThemes.Tests/bin/Release/net9.0
+17:44:35.94 INF Ctx: Microsoft.Hosting.Lifetime
+17:44:35.94 INF Msg: Application is shutting down...</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TestMyMiddlewareIntegration (100)" storage="/home/runner/work/blackbytesbox.serilog.ansiconsolethemes/blackbytesbox.serilog.ansiconsolethemes/source/blackbytesbox.serilog.ansiconsolethemes/blackbytesbox.serilog.ansiconsolethemes.tests/bin/release/net9.0/blackbytesbox.serilog.ansiconsolethemes.tests.dll" id="43f84606-b6c5-64b7-bc6e-37de90b408da">
+      <Execution id="fd51701e-9227-4944-aa4c-1c9810b56a84" />
+      <TestMethod codeBase="/home/runner/work/BlackBytesBox.Serilog.AnsiConsoleThemes/BlackBytesBox.Serilog.AnsiConsoleThemes/source/BlackBytesBox.Serilog.AnsiConsoleThemes/BlackBytesBox.Serilog.AnsiConsoleThemes.Tests/bin/Release/net9.0/BlackBytesBox.Serilog.AnsiConsoleThemes.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="BlackBytesBox.Serilog.AnsiConsoleThemes.Tests.VisualInspecionTest" name="TestMyMiddlewareIntegration" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="43f84606-b6c5-64b7-bc6e-37de90b408da" executionId="fd51701e-9227-4944-aa4c-1c9810b56a84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>Test Parallelization enabled for /home/runner/work/BlackBytesBox.Serilog.AnsiConsoleThemes/BlackBytesBox.Serilog.AnsiConsoleThemes/source/BlackBytesBox.Serilog.AnsiConsoleThemes/BlackBytesBox.Serilog.AnsiConsoleThemes.Tests/bin/Release/net9.0/BlackBytesBox.Serilog.AnsiConsoleThemes.Tests.dll (Workers: 4, Scope: MethodLevel)
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
