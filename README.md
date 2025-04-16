@@ -43,9 +43,9 @@ var logger = new LoggerConfiguration()
 
 ![image](https://raw.githubusercontent.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/refs/heads/main/resources/repository/ProfessionalNoir.png)
 
-## CodeingNight
+## CodingNight
 
-![image](https://raw.githubusercontent.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/refs/heads/main/resources/repository/CodeingNight.png)
+![image](https://raw.githubusercontent.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/refs/heads/main/resources/repository/CodingNight.png)
 
 
 
