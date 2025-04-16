@@ -33,7 +33,7 @@ Add the desired filters to your application's middleware pipeline in the `Progra
 
 ```csharp
 // Example usage
-
+var logger = new LoggerConfiguration()
     .WriteTo.Console(theme: CustomThemes.ClarionDusk)
     .CreateLogger();
 ```
