@@ -10,6 +10,9 @@ A collection of custom ANSI console themes for styled logging output with Serilo
 - **ProfessionalNoir**  
   A sleek, modern theme with high contrast and refined styling. It features bright white text, subtle greys, and distinctive colors for each log level, ideal for developers looking for a professional logging experience.
 
+- **CodingNight**  
+  A vibrant, developer-focused theme inspired by late-night coding sessions. It features deep backgrounds with bright, contrasting colors for each log level, making logs easy to scan and visually appealing during extended development hours.
+
 ## Features
 
 - **Enhanced Readability:** Carefully curated color schemes to clearly differentiate log levels and message types.
@@ -43,7 +46,7 @@ var logger = new LoggerConfiguration()
 
 ![image](https://raw.githubusercontent.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/refs/heads/main/resources/repository/ProfessionalNoir.png)
 
-## CodeingNight
+## CodingNight
 
 ![image](https://raw.githubusercontent.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/refs/heads/main/resources/repository/CodeingNight.png)
 

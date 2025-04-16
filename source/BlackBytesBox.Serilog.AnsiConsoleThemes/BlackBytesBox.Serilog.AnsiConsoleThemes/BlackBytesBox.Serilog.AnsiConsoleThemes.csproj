@@ -57,7 +57,7 @@
 		<RepositoryUrl>https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<Description>
-			<![CDATA[A collection of configurable middleware filters for ASP.NET Core applications that provide comprehensive request filtering and security features. Includes filters for IP addresses, URLs, HTTP protocols, headers, and user agents with a built-in failure tracking system.]]>
+			<![CDATA[A collection of custom ANSI console themes for styled logging output with Serilog.]]>
 		</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
