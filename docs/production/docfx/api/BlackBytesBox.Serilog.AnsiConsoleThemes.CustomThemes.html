@@ -113,10 +113,16 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
@@ -126,12 +132,6 @@
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BlackBytesBox.html">BlackBytesBox</a>.<a class="xref" href="BlackBytesBox.Serilog.html">Serilog</a>.<a class="xref" href="BlackBytesBox.Serilog.AnsiConsoleThemes.html">AnsiConsoleThemes</a></h6>
@@ -261,6 +261,46 @@ var logger = new LoggerConfiguration()
     .WriteTo.Console(theme: CustomThemes.ProfessionalNoir)
     .CreateLogger();</code></pre>
 
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/new/main/apiSpec/new?filename=BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_RetroGreen.md&amp;value=---%0Auid%3A%20BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.RetroGreen%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/blob/main/source/BlackBytesBox.Serilog.AnsiConsoleThemes/BlackBytesBox.Serilog.AnsiConsoleThemes/RetroGreen.cs/#L29">View Source</a>
+  </span>
+  <a id="BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_RetroGreen_" data-uid="BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.RetroGreen*"></a>
+  <h4 id="BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_RetroGreen" data-uid="BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.RetroGreen">RetroGreen</h4>
+  <div class="markdown level1 summary"><p>RetroGreen: evokes the look of monochrome CRT terminals circa 1980-1990.<br>
+&lt;remarks&gt;Ideal when you need that nostalgic hacker-movie vibe while retaining clear log-level separation.&lt;/remarks&gt;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AnsiConsoleTheme RetroGreen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AnsiConsoleTheme</span></td>
+        <td><p>An <span class="xref">Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme</span> configured with green-centric ANSI colors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_RetroGreen_examples">Examples</h5>
+  <p>&lt;code&gt;
+Log.Logger = new LoggerConfiguration()
+.WriteTo.Console(theme: CustomThemes.RetroGreen)
+.CreateLogger();
+&lt;/code&gt;</p>
+
 
 </article>
           </div>
@@ -273,7 +313,7 @@ var logger = new LoggerConfiguration()
                     <a href="https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/new/main/apiSpec/new?filename=BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes.md&amp;value=---%0Auid%3A%20BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/blob/main/source/BlackBytesBox.Serilog.AnsiConsoleThemes/BlackBytesBox.Serilog.AnsiConsoleThemes/ProfessionalNoir.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/BlackBytesBox.Serilog.AnsiConsoleThemes/blob/main/source/BlackBytesBox.Serilog.AnsiConsoleThemes/BlackBytesBox.Serilog.AnsiConsoleThemes/RetroGreen.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
