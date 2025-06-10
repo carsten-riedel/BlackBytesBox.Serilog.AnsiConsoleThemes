@@ -52,3 +52,16 @@ references:
   isSpec: "True"
   fullName: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.ProfessionalNoir
   nameWithType: CustomThemes.ProfessionalNoir
+- uid: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.RetroGreen
+  name: RetroGreen
+  href: api/BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.html#BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_RetroGreen
+  commentId: P:BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.RetroGreen
+  fullName: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.RetroGreen
+  nameWithType: CustomThemes.RetroGreen
+- uid: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.RetroGreen*
+  name: RetroGreen
+  href: api/BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.html#BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_RetroGreen_
+  commentId: Overload:BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.RetroGreen
+  isSpec: "True"
+  fullName: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.RetroGreen
+  nameWithType: CustomThemes.RetroGreen
