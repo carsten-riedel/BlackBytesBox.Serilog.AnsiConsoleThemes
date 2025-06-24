@@ -1,0 +1,30 @@
+============================================
+          THIRD-PARTY LICENSE NOTICES       
+============================================
+
+This project includes third-party libraries under open-source licenses.
+
+--------------------------------------------
+📦 Package: Microsoft.NETFramework.ReferenceAssemblies (v1.0.3)
+🔖 License: MIT
+🌍 License URL: https://github.com/Microsoft/dotnet/blob/master/LICENSE
+👤 Authors: Microsoft
+🔗 Project: https://github.com/Microsoft/dotnet/tree/master/releases/reference-assemblies
+--------------------------------------------
+
+--------------------------------------------
+📦 Package: Serilog.Sinks.Console (v6.0.0)
+🔖 License: Apache-2.0
+🌍 License URL: https://licenses.nuget.org/Apache-2.0
+👤 Authors: Serilog Contributors
+🔗 Project: https://github.com/serilog/serilog-sinks-console
+--------------------------------------------
+
+--------------------------------------------
+📦 Package: System.Text.Json (v9.0.3)
+🔖 License: MIT
+🌍 License URL: https://licenses.nuget.org/MIT
+👤 Authors: Microsoft
+🔗 Project: https://dot.net/
+--------------------------------------------
+
