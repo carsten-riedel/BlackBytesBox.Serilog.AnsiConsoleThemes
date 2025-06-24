@@ -27,9 +27,7 @@ Install the package via NuGet:
 dotnet add package BlackBytesBox.Serilog.AnsiConsoleThemes
 ```
 
-### Uasage
-
-Add the desired filters to your application's middleware pipeline in the `Program.cs` or `Startup.cs` file:
+### Useage
 
 ```csharp
 // Example usage
