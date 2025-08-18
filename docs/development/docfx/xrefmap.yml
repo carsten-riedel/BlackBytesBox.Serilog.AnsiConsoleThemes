@@ -13,6 +13,32 @@ references:
   commentId: T:BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes
   fullName: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes
   nameWithType: CustomThemes
+- uid: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Aurora
+  name: Aurora
+  href: api/BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.html#BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_Aurora
+  commentId: P:BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Aurora
+  fullName: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Aurora
+  nameWithType: CustomThemes.Aurora
+- uid: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Aurora*
+  name: Aurora
+  href: api/BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.html#BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_Aurora_
+  commentId: Overload:BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Aurora
+  isSpec: "True"
+  fullName: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Aurora
+  nameWithType: CustomThemes.Aurora
+- uid: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Bloodline
+  name: Bloodline
+  href: api/BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.html#BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_Bloodline
+  commentId: P:BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Bloodline
+  fullName: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Bloodline
+  nameWithType: CustomThemes.Bloodline
+- uid: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Bloodline*
+  name: Bloodline
+  href: api/BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.html#BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_Bloodline_
+  commentId: Overload:BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Bloodline
+  isSpec: "True"
+  fullName: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.Bloodline
+  nameWithType: CustomThemes.Bloodline
 - uid: BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.ClarionDusk
   name: ClarionDusk
   href: api/BlackBytesBox.Serilog.AnsiConsoleThemes.CustomThemes.html#BlackBytesBox_Serilog_AnsiConsoleThemes_CustomThemes_ClarionDusk
